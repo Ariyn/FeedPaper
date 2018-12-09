@@ -1,0 +1,4 @@
+ <div class="colum colum-quadruple colum-left colum-right">
+      <div class="colum-quadruple-title">{title}</div>
+      <div class="colum-quadruple-body">{body}</div>
+      </div>

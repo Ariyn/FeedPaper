@@ -1,0 +1,151 @@
+body {
+  background: rgb(204,204,204); 
+}
+@page { size: A4 portrait }
+page {
+  background: white;
+  width: 21cm;
+  height: 29.7cm;
+  display: block; 
+  margin: 0 auto;
+  margin-bottom: 0.5cm;
+  padding:7mm 1mm;
+  box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+  border:1px solid black;
+  
+  page-break-after:always;
+}
+@media print {
+  html, body {
+    height:auto;
+    width:auto;
+  }
+  body, page {
+    margin: 0;
+    box-shadow: 0;
+    border:0;
+    height:100%;
+    width:100%;
+    font-size:1em;
+  }
+}
+.colum {
+  border:1px solid black;
+  
+  display:inline-block;
+  position:relative;
+  margin:0;
+  padding:0;
+   
+  overflow:hidden;
+  
+  font-size:8.3pt;
+}
+.colum-left {
+  margin-left:7mm;
+  margin-right:1mm;
+}
+.colum-right {
+  margin-left:1mm;
+  margin-right:7mm;
+}
+.colum-single {
+  width:calc(50% - 8.6mm);
+  height:24.2%;
+}
+.colum-single-title {
+  width:100%;
+  font-size:1.5em;
+}
+.colum-single-body {
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;
+  
+  text-indent:0.6em;
+  
+  height:calc(100% - 2.5em);
+}
+
+.colum-double {
+  display:block;
+  width:calc(100% - 14mm);
+  height:25%;
+  margin:auto 7mm auto 7mm;
+}
+.colum-double img {
+  max-width: 31em;
+	max-height: 20em;
+}
+.colum-double-title {
+  width:100%;
+  font-size:2em;
+}
+.colum-double-body {
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;
+  
+  height:calc(100% - 3em);
+}
+
+.colum-quadruple {
+  width:calc(100% - 14mm);
+  height:50%;
+  margin:0.5mm 7mm;
+}
+.colum-quadruple img {
+  width:23em;
+  height:15em;
+}
+.colum-quadruple-title {
+  width:100%;
+  font-size:2em;
+  flex-grow: 1;
+}
+.colum-quadruple-body {
+  position:relative;
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;  
+  
+  position:relative;  
+  height:calc(100% - 3em);
+}
+
+
+
+/* twitter css*/
+blockquote.twitter-tweet {
+  display: inline-block;
+  font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 16px;
+  border-color: #eee #ddd #bbb;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  margin: 10px 5px;
+  padding: 0 16px 16px 16px;
+  max-width: 468px;
+}
+
+blockquote.twitter-tweet p {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 20px;
+}
+
+blockquote.twitter-tweet a {
+  color: inherit;
+  font-weight: normal;
+  text-decoration: none;
+  outline: 0 none;
+}
+
+blockquote.twitter-tweet a:hover,
+blockquote.twitter-tweet a:focus {
+  text-decoration: underline;
+}

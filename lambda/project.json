@@ -1,0 +1,8 @@
+{
+  "name": "feedPaper",
+  "description": "classic newspaper style feed visualizer",
+  "memory": 128,
+  "timeout": 5,
+  "role": "arn:aws:iam::549757146116:role/feedPaper_lambda_function",
+  "environment": {}
+}

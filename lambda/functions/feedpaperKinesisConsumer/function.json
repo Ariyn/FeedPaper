@@ -1,0 +1,8 @@
+{
+  "name": "feedpaperKinesisConsumer",
+  "description": "consume message queue and put to dynamo db",
+  "memory": 128,
+  "timeout": 10,
+  "role": "arn:aws:iam::549757146116:role/feedPaper_lambda_function",
+  "environment": {}
+}

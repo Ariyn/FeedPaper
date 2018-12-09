@@ -1,0 +1,4 @@
+ <div class="colum colum-double colum-left colum-right">
+  <div class="colum-double-title">{title}</div>
+  <div class="colum-double-body">{body}</div>
+</div>
